@@ -1,0 +1,29 @@
+[project]
+name = "django-mssql-cold-start-retry"
+version = "0.1.0"
+description = "Survive Azure SQL cold-connection timeouts in Django: view decorator + middleware that retries on dead pool connections."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Deepak Dhingra", email = "dpkdhingra91@gmail.com"}]
+keywords = ["django", "mssql", "azure-sql", "pyodbc", "retry", "resilience"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+]
+dependencies = ["django>=4.0"]
+
+[project.urls]
+Homepage = "https://github.com/dpkdhingra91/django-mssql-cold-start-retry"
+Issues = "https://github.com/dpkdhingra91/django-mssql-cold-start-retry/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["django_mssql_retry"]
