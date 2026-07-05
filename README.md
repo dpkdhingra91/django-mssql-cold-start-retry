@@ -89,3 +89,7 @@ MIT — see [LICENSE](LICENSE).
 ## Origin
 
 Extracted from a production Django backend running against Azure SQL Basic tier, in a Docker container behind Azure NAT. The cold-connection bug was rare enough to be hard to reproduce locally but consistently caught one user per day. This pair of layers dropped the error rate to ~0.
+
+---
+
+*Extracted from the production stack behind [AI Interview Agents](https://www.aiinterviewagents.com) — an AI voice interview platform.*
